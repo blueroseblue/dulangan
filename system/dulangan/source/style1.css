@@ -1,0 +1,85 @@
+/* log in */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&family=Sigmar&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", Arial, sans-serif;
+}
+body {
+  font-family: "Poppins", Arial, sans-serif !important;
+}
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0)),
+    url("../image/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(50%) center; /* Shifts the background 250px to the right */
+  min-height: 100vh;
+}
+.bg-darkblue{
+  background-color: #3795BD !important;
+}
+.bg-grey{
+  background-color: #3795BD;
+}
+.transparent-bg {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* White background with 80% opacity */
+}
+.radio-outline {
+  outline: 1px solid black;
+}
+.form-control {
+  outline: 1px solid black;
+}
+
+.popup-backdrop {
+  background: rgba(14, 14, 14, 0.555);
+  position: fixed;
+  inset: 0 0 0 0;
+}
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.sidebar li.active {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.sidebar li.active a {
+  color: black;
+}
+.sidebar li a {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  .sidebar.active {
+    margin-left: 0;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+}
+
+td,
+th {
+  white-space: nowrap;
+}
